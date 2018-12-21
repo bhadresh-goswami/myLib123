@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4F0923E821CCD11C001999FA /* myLib123.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F0923E621CCD11C001999FA /* myLib123.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F0923EF21CCD13E001999FA /* myLibTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0923EE21CCD13E001999FA /* myLibTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4F0923E321CCD11C001999FA /* myLib123.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = myLib123.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F0923E621CCD11C001999FA /* myLib123.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myLib123.h; sourceTree = "<group>"; };
 		4F0923E721CCD11C001999FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F0923EE21CCD13E001999FA /* myLibTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myLibTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				4F0923E621CCD11C001999FA /* myLib123.h */,
 				4F0923E721CCD11C001999FA /* Info.plist */,
+				4F0923EE21CCD13E001999FA /* myLibTest.swift */,
 			);
 			path = myLib123;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					4F0923E221CCD11C001999FA = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F0923EF21CCD13E001999FA /* myLibTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +258,7 @@
 		4F0923EC21CCD11C001999FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -265,6 +271,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bhadresh.myLib123;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -273,6 +280,7 @@
 		4F0923ED21CCD11C001999FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
